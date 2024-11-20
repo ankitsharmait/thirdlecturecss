@@ -46,6 +46,27 @@ relative unit(rem) -> this length unit is depends unpn html font size usually ht
             height: 75vh;
             width: 50vw;
         }
+        .grandparent
+        {
+            height: 100px;
+            width: 100px;
+            background: rgb(160, 199, 221);
+        }
+        /**  we provide parent box height and width =50% so it will take 50% area from grandparent box**/
+        .parent{
+            height: 50%;
+            width: 50%;
+            background: red;
+            border: 3px solid;
+        }
+         /**  we provide child box height and width =50% so it will take 50% area from parent box**/
+        .child
+        {
+            height: 50%;
+            width: 50%;
+            background: blue;
+            border: 3px solid burlywood;
+        }
 
     </style>
 </head>
@@ -55,5 +76,12 @@ relative unit(rem) -> this length unit is depends unpn html font size usually ht
     <div class="px">Pixel Unit</div>
     <div class="rem">rem Unit</div>
     <div class="vh-vw"> vh and vw unit</div>
+    <!-- here we define div inside div to use % unit-->
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </div>
+
 </body>
 </html>
