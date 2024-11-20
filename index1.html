@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Units</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        html{
+            font-size: 20px;/*here we provide html font size = 20px so in this file 1 rem = 20px became*/
+        }
+        h1,h2{
+         text-align: center;
+         color: coral;
+        }
+        /** Absalute Unit px(pixel)->it  is a absalute length unit they go as it is in the browser**/
+        .px{
+            height: 100px;
+            width: 100px;
+            background: plum;
+            margin: 10px;
+            font-size: 30px;
+            color: brown;
+        }
+/**
+relative unit(rem) -> this length unit is depends unpn html font size usually html bydefault font size is 16px and 1 rem = html font size also we can modify html font size*/
+        .rem
+        {
+            height: 5rem;
+            width: 5rem;
+            background: lightgreen;
+            margin: 2rem;
+            font-size: 1.5rem;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Css Units</h1>
+    <h2>Absalute Unit</h2>
+    <div class="px">Pixel Unit</div>
+    <div class="rem">rem Unit</div>
+</body>
+</html>
