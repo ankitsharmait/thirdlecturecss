@@ -37,6 +37,16 @@ relative unit(rem) -> this length unit is depends unpn html font size usually ht
             color: black;
         }
 
+        /** 100vh = browser current window height**/
+        /** 100vw = browser current window width **/
+        /** vh and vw unit automatically adjust acccording to the window size**/
+        .vh-vw{
+            background: lightseagreen;
+            font-size: 30px;
+            height: 75vh;
+            width: 50vw;
+        }
+
     </style>
 </head>
 <body>
@@ -44,5 +54,6 @@ relative unit(rem) -> this length unit is depends unpn html font size usually ht
     <h2>Absalute Unit</h2>
     <div class="px">Pixel Unit</div>
     <div class="rem">rem Unit</div>
+    <div class="vh-vw"> vh and vw unit</div>
 </body>
 </html>
